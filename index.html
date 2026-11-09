@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Raman</title>
+  <meta name="description" content="Personal website of Raman — projects, background and contact.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%234f46e5'/><text x='50' y='68' font-size='58' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='700'>R</text></svg>">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="logo">Raman<span>.</span></a>
+      <nav>
+        <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><button class="theme-toggle" aria-label="Toggle dark mode">◐</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Hello, I'm</p>
+        <h1>Raman Keynejad</h1>
+        <p class="lead">I build things, learn constantly, and love turning ideas into reality. Welcome to my corner of the internet.</p>
+        <div class="cta">
+          <a href="#projects" class="btn btn-primary">See my work</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container about">
+        <div class="avatar" aria-hidden="true">R</div>
+        <div>
+          <h2>About me</h2>
+          <p>Write a few sentences about yourself here: what you do, what you're passionate about, and what you're working toward.</p>
+          <p>You can mention where you're based, your background, or a fun fact that makes you memorable.</p>
+          <ul class="skills">
+            <li>Design</li><li>Web Development</li><li>Problem Solving</li><li>Creativity</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section alt">
+      <div class="container">
+        <h2>Projects</h2>
+        <p class="section-lead">A few things I've made or am working on.</p>
+        <div class="grid">
+          <article class="card">
+            <div class="card-icon">🚀</div>
+            <h3>Project One</h3>
+            <p>A short description of what this project does and why it matters.</p>
+            <a href="#" class="card-link">Learn more →</a>
+          </article>
+          <article class="card">
+            <div class="card-icon">🎨</div>
+            <h3>Project Two</h3>
+            <p>Describe the problem you solved, the tools you used, or what you learned.</p>
+            <a href="#" class="card-link">Learn more →</a>
+          </article>
+          <article class="card">
+            <div class="card-icon">💡</div>
+            <h3>Project Three</h3>
+            <p>Add a link to a live demo, a GitHub repo, or photos of the result.</p>
+            <a href="#" class="card-link">Learn more →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container contact">
+        <h2>Let's talk</h2>
+        <p class="section-lead">Have a question or an idea? Send me a message.</p>
+        <form class="contact-form" id="contact-form">
+          <label>Name<input type="text" name="name" required></label>
+          <label>Email<input type="email" name="email" required></label>
+          <label>Message<textarea name="message" rows="5" required></textarea></label>
+          <button type="submit" class="btn btn-primary">Send message</button>
+          <p class="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Raman Keynejad. Built with care.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
